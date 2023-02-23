@@ -1,3 +1,12 @@
+/* variables */
+:root {
+--mainColor: #ff6060;
+--secondaryColor: #FFFFFF;
+--BgColor: #F7F7F7;
+--BgColor2: #000000;
+}
+
+/* full pages */
 body {
     margin: 0;
     padding: 0;
@@ -5,3 +14,12 @@ body {
     text-decoration: none;
     list-style-type: none;
 }
+
+
+/* Breakpoint	Class infix	Dimensions
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */

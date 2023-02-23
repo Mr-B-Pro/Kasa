@@ -1,0 +1,37 @@
+/**** DESKTOP ****/
+.apartments__grid__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 43px;
+  padding: 55px 50px 0px 0px;
+  background-color: var(--BgColor);
+  border-radius: 25px;
+}
+
+@media (max-width: 1200px) {
+  .apartments__grid__container {
+    margin-top: 43px;
+    padding: 55px 1px 0px 0px;
+  }
+}
+
+/**** TABLET ****/
+@media (max-width: 768px) {
+  .apartments__grid__container {
+    flex-direction: column;
+    padding: 30px 0px;
+    border-radius: 0px;
+  }
+}
+
+/**** SMARTPHONE ****/
+@media (max-width: 576px) {
+  .apartments__grid__container {
+    flex-direction: column;
+    margin: 22px 0 22px 0;
+    padding: 0px 0px;
+    background-color: transparent;
+    border-radius: 25px;
+  }
+}

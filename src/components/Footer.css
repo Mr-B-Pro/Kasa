@@ -1,0 +1,37 @@
+/**** DESKTOP ****/
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  height: 209px;
+  background-color: var(--BgColor2);
+}
+.footer__logo__kasa {
+  height: 39.44px;
+  width: 122px;
+}
+.footer__text {
+  margin: 31.67px 0px 29px 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  color: var(--secondaryColor);
+}
+  
+  /**** SMARTPHONE ****/
+  @media (max-width: 576px) {
+    .footer__logo__kasa {
+      height: 39.44px;
+      width: 122px;
+    }
+    
+    .footer__text {
+      margin: 31.67px 0px 62px 0px;
+      font-size: 12px;
+    }
+  }
+  
+  
