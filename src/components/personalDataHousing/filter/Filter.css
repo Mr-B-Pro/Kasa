@@ -1,0 +1,13 @@
+.personalDataHousing__filter {
+    padding: 3px 41px 2px 40px;
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  .personalDataHousing__filter__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+    color: var(--secondaryColor);
+  }

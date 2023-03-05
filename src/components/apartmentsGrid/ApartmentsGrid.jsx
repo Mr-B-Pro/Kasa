@@ -1,8 +1,8 @@
 import React from 'react'
 import "./ApartmentsGrid.css"
-import Apartment from "./Apartment.jsx"
+import Apartment from "./apartment/Apartment.jsx"
 
-// SECTION 2 APARTMENTS MAIN ACCUEIL
+// SECTION 2 APARTMENTSGRID MAIN HOME
 function ApartmentsGrid() {
   return (
     // container apartments

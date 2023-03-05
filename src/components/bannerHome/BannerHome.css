@@ -1,6 +1,7 @@
 /**** DESKTOP ****/
-/* section banner */
-.section__banner {
+/* section bannerHome  */
+.section__bannerHome {
+    margin-top: 63px;
     display: flex;
     align-items: center;
     position: relative;
@@ -8,20 +9,23 @@
     max-height: 223px;
     border-radius: 25px;
 }
-.banner__img {
+.bannerHome__img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-/* transparency effect banner */
-.banner__overlay {
+.bannerHome__img__smartphone {
+    display: none;
+}
+/* transparency effect bannerHome  */
+.bannerHome__overlay {
     background: var(--BgColor2);
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0.3;
   }
-.banner__title {
+.bannerHome__title {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -32,49 +36,59 @@
 }
 
 @media (max-width: 992px) {
-    .section__banner {
+    .section__bannerHome {
         max-height: 0px;
         min-height: 140px;
     }
-    .banner__img {
+    .bannerHome__img {
         min-height: 150px;
     }
-    .banner__title {
+    .bannerHome__title {
         font-size: 36px;
     }
 }
 
 /**** TABLET ****/
 @media (max-width: 768px) {
-    .banner__title {
+    .section__bannerHome {
+        margin-top: 40px;
+    }
+    .bannerHome__title {
         font-size: 28px;
     }
 }
 
 /**** SMARTPHONE ****/
 @media (max-width: 576px) {
-    .section__banner {
+    .section__bannerHome {
+        margin-top: 16px;
         min-height: 111px;
         border-radius: 10px;
     }
-    .banner__title {
+    .bannerHome__title {
         font-size: 20px;
     }
 }
 
 @media (max-width: 375px) {
-    .section__banner {
+    .section__bannerHome {
         max-height: 0px;
         min-height: 111px;
         border-radius: 10px;
     }
-    .banner__img {
-        width: 335px;
+    .bannerHome__img {
+        /* width: 335px;
         height: 111px;
         left: 20px;
-        top: 83px;
+        top: 83px; */
     }
-    .banner__title {
+    .bannerHome__img {
+       display: none;
+    }
+    .bannerHome__img__smartphone {
+        display: flex;
+    }
+    .bannerHome__title {
         text-align: start;
         margin: 31px 102px 32px 16px;
         font-size: 24px;

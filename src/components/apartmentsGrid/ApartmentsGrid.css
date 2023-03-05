@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 43px;
+  margin: 43px 0 43px 0;
   padding: 55px 50px 0px 0px;
   background-color: var(--BgColor);
   border-radius: 25px;
@@ -29,7 +29,7 @@
 @media (max-width: 576px) {
   .apartments__grid__container {
     flex-direction: column;
-    margin: 22px 0 22px 0;
+    margin: 0px 0 22px 0;
     padding: 0px 0px;
     background-color: transparent;
     border-radius: 25px;

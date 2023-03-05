@@ -1,0 +1,88 @@
+/* container carroussel description and equipements  */
+.section__cardsHousing {
+    display: flex;
+    margin: 24px 0px 162px 0;
+    justify-content: space-between;
+  }
+  /* container carroussel description */
+  .cardsHousing__container__description {
+  }
+  .cardsHousing__container__description__title {
+    position: relative;
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+    border-radius: 10px;
+    padding: 13px 0px 13px 20px;
+    background-color: var(--mainColor);
+  }
+  .cardsHousing__description__title__arrow  {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 30px;
+    color: var(--secondaryColor);
+  }
+  .cardsHousing__description__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: var(--secondaryColor);
+  }
+  .cardsHousing__container__description__text {
+      padding: 30px 12px 53px 20px;
+      width: 582px;
+      height: auto;
+      border-radius: 10px;
+    background-color: var(--BgColor);
+  }
+  .cardsHousing__description__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: var(--mainColor);
+  }
+  /* container carroussel equipements  */
+  .cardsHousing__container__equipements {
+    
+  }
+  .cardsHousing__container__equipements__title {
+    position: relative;
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px 0px 13px 20px;
+    border-radius: 10px;
+    background-color: var(--mainColor);
+  }
+  .cardsHousing__equipements__title__arrow {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 30px;
+    color: var(--secondaryColor);
+  }
+  .cardsHousing__equipements__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: var(--secondaryColor);
+  }
+  .cardsHousing__container__equipements__text {
+      padding: 30px 12px 27px 20px;
+      width: 582px;
+      height: auto;
+      border-radius: 10px;
+    background-color: var(--BgColor);
+  }
+  .cardsHousing__equipements__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: var(--mainColor);
+  }
+  
