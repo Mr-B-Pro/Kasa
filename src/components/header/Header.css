@@ -1,5 +1,4 @@
 /**** DESKTOP ****/
-/* container header */
 .header__container {
   display: flex;
   align-items: center;
@@ -15,7 +14,6 @@
   width: 210.32px;
 }
 
-/* container navbar */
 .navbar__container {
   display: flex;
   font-size: 24px;
@@ -71,8 +69,9 @@
     width: 145px;
   }
   .navbar__container {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 16px;
+    text-transform: uppercase;
   }
   .navbar__accueil {
     height: 17px;
@@ -85,7 +84,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .navbar__container {
     font-size: 12px;
     line-height: 17.11px;

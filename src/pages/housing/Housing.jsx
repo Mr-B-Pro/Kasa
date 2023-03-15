@@ -1,18 +1,18 @@
 import React from "react";
-import BannerHousing from "../../components/bannerHousing/BannerHousing.jsx";
-import PersonalDataHousing from "../../components/personalDataHousing/PersonalDataHousing.jsx";
-import CardsHousing from "../../components/cardsHousing/CardsHousing.jsx";
-import "./Housing.css";
+import HousingBanner from "../../layout/housing-banner/housing-banner.jsx";
+import HousingData from "../../layout/housing-data/housing-data.jsx";
+import HousingPanel from "../../layout/housing-panel/housing-panel.jsx";
+import "./housing.css";
 
 // PAGE HOUSING
-function Housing() {
+function housing() {
   return (
     <main className="main__housing">
-      <BannerHousing />
-      <PersonalDataHousing />
-      <CardsHousing />
+      <HousingBanner />
+      <HousingData />
+      <HousingPanel />
     </main>
   );
 }
 
-export default Housing;
+export default housing;

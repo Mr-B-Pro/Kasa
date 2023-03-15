@@ -1,0 +1,39 @@
+  /**** DESKTOP ****/
+/* container carroussel description and equipements  */
+.housing__panel__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+    margin: 0px 0px 206px 0;
+  }
+  
+  @media (max-width: 992px) {
+    .housing__panel__section {
+      margin: 0px 0px 138px 0;
+    }
+  }
+  
+  /* TABLET */
+  @media (max-width: 768px) {
+    .housing__panel__section {
+      flex-direction: column;
+      margin: 0px 0px 30px 0;
+      gap: 0px;
+    }
+  }
+  
+  /**** SMARTPHONE ****/
+  @media (max-width: 576px) {
+    .housing__panel__section {
+      margin: 16px 0px 331px 0;
+      gap: 0px;
+    }
+  }
+  @media (max-width: 376px) {
+    .housing__panel__section {
+      margin: 16px 0px 241px 0;
+    }
+  }
+
+  
+  

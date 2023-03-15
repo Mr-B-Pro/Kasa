@@ -1,11 +1,11 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/home/Home.jsx"
-import About from "../pages/about/About.jsx"
-import Housing from "../pages/housing/Housing.jsx"
-import Error from "../pages/error/Error.jsx"
+import Home from "../pages/home/home.jsx"
+import About from "../pages/about/about.jsx"
+import Housing from "../pages/housing/housing.jsx"
+import Error from "../pages/error/error.jsx"
 
-function Routing() {
+function routing() {
   return (
     <Routes>
     <Route path="/" element={<Home />} />
@@ -16,4 +16,4 @@ function Routing() {
   )
 }
 
-export default Routing
+export default routing

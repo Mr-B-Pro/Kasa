@@ -1,0 +1,40 @@
+/**** DESKTOP ****/
+.home__grid__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 43px 0 43px 0;
+  padding: 55px 50px 0px 0px;
+  background-color: var(--BgColor);
+  border-radius: 25px;
+}
+
+@media (max-width: 1200px) {
+  .home__grid__container {
+    margin-top: 43px;
+    padding: 55px 1px 0px 0px;
+  }
+}
+
+@media (min-width: 1840px) {
+}
+
+/**** TABLET ****/
+@media (max-width: 768px) {
+  .home__grid__container {
+    flex-direction: column;
+    padding: 30px 0px;
+    border-radius: 0px;
+  }
+}
+
+/**** SMARTPHONE ****/
+@media (max-width: 576px) {
+  .home__grid__container {
+    flex-direction: column;
+    margin: 0px 0 22px 0;
+    padding: 0px 0px;
+    background-color: transparent;
+    border-radius: 25px;
+  }
+}

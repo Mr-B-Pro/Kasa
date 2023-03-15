@@ -1,16 +1,16 @@
 import React from 'react'
-import BannerHome from "../../components/bannerHome/BannerHome.jsx"
-import ApartmentsGrid from "../../components/apartmentsGrid/ApartmentsGrid.jsx"
-import "./Home.css"
+import HomeBanner from "../../layout/home-banner/home-banner.jsx"
+import HomeGrid from "../../layout/home-grid/home-grid.jsx"
+import "./home.css"
 
 // PAGE HOME
-function Home() {
+function home() {
   return (
     <main className='main__home'>
-        <BannerHome />
-        <ApartmentsGrid />
+        <HomeBanner />
+        <HomeGrid />
     </main>
   )
 }
 
-export default Home
+export default home

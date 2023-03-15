@@ -1,13 +1,21 @@
 import React from 'react'
-import "./About.css"
+import AboutBanner from "../../layout/about-banner/about-banner.jsx"
+import AboutPannelDescription from "../../components/description-panel/description-panel.jsx"
+import "./about.css"
 
 // PAGE ABOUT
-function About() {
+function about() {
   return (
     <main className='main__about'>
-       <h1>ABOUT</h1>
+      <AboutBanner />
+      <div className='about__pannel__description__container'>
+      <AboutPannelDescription />
+      <AboutPannelDescription />
+      <AboutPannelDescription />
+      <AboutPannelDescription />
+      </div>
     </main>
   )
 }
 
-export default About
+export default about

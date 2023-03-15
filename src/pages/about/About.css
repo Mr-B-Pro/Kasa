@@ -2,7 +2,9 @@
 .main__about{
     margin: 0 100px;
   }
-  
+  .about__pannel__description__container {
+    margin: 0 109px 80px 109px;
+  }
   @media (min-width: 1700px) {
   }
   
@@ -10,12 +12,18 @@
   }
   
   @media (max-width: 992px) {
+    .about__pannel__description__container {
+      margin: 0 70px 80px 70px;
+    }
   }
   
   /* TABLET */
   @media (max-width: 768px) {
     .main__about {
       margin: 0px 60px;
+    }
+    .about__pannel__description__container {
+      margin: 0 0px 80px 0px;
     }
   }
   
@@ -24,7 +32,10 @@
     .main__about {
       margin: 0 20px;
     }
+    .about__pannel__description__container {
+      margin: 0 0 296px 0px;
+    }
   }
   
-  @media (max-width: 375px) {
+  @media (max-width: 376px) {
   }

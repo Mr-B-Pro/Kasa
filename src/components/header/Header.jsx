@@ -1,14 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import HeaderLogo from "../../assets/header-logo.png";
-import "./Header.css";
+import HeaderLogo from "../../assets/header-img/header-logo.png";
+import "./header.css";
 
-// HEADER LOGO + NAVBAR
-function Header() {
+function header() {
   return (
-    // container header
     <header className="header__container">
-      {/* logo kasa accueil */}
       <NavLink to="/">
       <img
         className="header__logo__kasa"
@@ -17,7 +14,6 @@ function Header() {
       />
       </NavLink>
 
-      {/* container navbar */}
       <nav className="navbar__container">
         <NavLink to="/">
           <div className="navbar__accueil">Accueil</div>
@@ -30,4 +26,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default header;

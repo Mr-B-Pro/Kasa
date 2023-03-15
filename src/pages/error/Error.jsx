@@ -1,8 +1,8 @@
 import React from "react";
-import "./Error.css";
+import "./error.css";
 
 // PAGE ERROR
-function Error() {
+function error() {
   return (
     <div>
       <main className="main__error">
@@ -12,4 +12,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default error;

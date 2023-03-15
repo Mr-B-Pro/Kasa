@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./components/header/Header.jsx";
-import Footer from "./components/footer/Footer.jsx";
-import Routing from "./routers/Routing.jsx";
-import "./App.css";
+import Header from "./components/header/header.jsx";
+import Footer from "./components/footer/footer.jsx";
+import Routing from "./routers/routing.jsx";
+import "./app.css";
 
-function App() {
+function app() {
   return (
     <div>
       <Header />
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default app;
