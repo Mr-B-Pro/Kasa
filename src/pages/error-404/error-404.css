@@ -1,0 +1,119 @@
+/**** DESKTOP ****/
+.main__error404 {
+  margin: 0 100px;
+}
+.section__error404 {
+  margin: 174px 0 205px 0;
+}
+.h1__error404 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 142.6%;
+  text-align: center;
+  color: var(--mainColor);
+}
+.h2__error404 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    text-align: center;
+    color: var(--mainColor); 
+}
+.h2__error404__smartphone {
+display: none;
+}
+.return__home__error404 {
+  margin-top: 182px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--mainColor);
+}
+
+@media (min-width: 1700px) {
+}
+
+@media (max-width: 1200px) {
+  .section__error404 {
+    margin: 174px 0 270px 0;
+  }
+  .h1__error404 {
+    font-size: 250px;
+  }
+  .h2__error404 {
+      font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section__error404 {
+    margin: 174px 0 381px 0;
+  }
+  .h1__error404 {
+    font-size: 180px;
+  }
+  .h2__error404 {
+      font-size: 22px;
+  }
+  .return__home__error404 {
+      font-size: 16px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .main__error404 {
+    margin: 0px 60px;
+  }
+  .section__error404 {
+    margin: 174px 0 493px 0;
+  }
+  .h1__error404 {
+    font-size: 120px;
+  }
+  .h2__error404 {
+      font-size: 18px;
+  }
+  .return__home__error404 {
+      font-size: 15px;
+  }
+  
+}
+
+/**** SMARTPHONE ****/
+@media (max-width: 576px) {
+  .main__error404 {
+    margin: 0 20px;
+  }
+  .section__error404 {
+    margin: 198px 0 549px 0;
+  }
+  .h1__error404 {
+    font-size: 96px;
+  }
+  .h2__error404 {
+    display: none;
+  }
+  .h2__error404__smartphone {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: center;
+    color: var(--mainColor); 
+  }
+  .return__home__error404 {
+    margin-top: 133px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 376px) {
+  
+}

@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/home/home.jsx"
 import About from "../pages/about/about.jsx"
 import Housing from "../pages/housing/housing.jsx"
-import Error from "../pages/error/error.jsx"
+import Error404 from "../pages/error-404/error-404.jsx"
 
 function routing() {
   return (
@@ -11,7 +11,7 @@ function routing() {
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/housing" element={<Housing />} />
-    <Route path="*" element={<Error />} />
+    <Route path="*" element={<Error404 />} />
   </Routes>
   )
 }
