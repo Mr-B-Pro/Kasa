@@ -24,9 +24,6 @@
   object-fit: cover;
   border-radius: 25px;
 }
-.banner__housing__smartphone__img {
-  display: none;
-}
 
 @media (max-width: 1200px) {
   .banner__housing__arrowLeft {
@@ -83,12 +80,5 @@
   .banner__housing__arrowRight {
     right: 5px;
     font-size: 20px;
-  }
-  .banner__housing__img{
-    display: none;
-  }
-  .banner__housing__smartphone__img {
-    display: flex;
-    border-radius: 10px;
   }
 }

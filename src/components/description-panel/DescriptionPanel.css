@@ -1,6 +1,6 @@
    /**** DESKTOP ****/
  .description__panel__container {
-  margin-top: 31px;
+  margin-top: 26px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,10 +56,17 @@
   }
 }
 
+/* TABLET */
+@media (max-width: 768px) {
+  .description__panel__container {
+    margin-top: 17px;
+  }
+}
+
 /**** SMARTPHONE ****/
 @media (max-width: 576px) {
   .description__panel__container {
-    margin-top: 19px;
+    margin-top: 17px;
     margin-bottom: 21px;
   }
   .description__panel__title__container {

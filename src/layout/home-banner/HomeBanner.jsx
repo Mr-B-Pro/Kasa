@@ -1,9 +1,9 @@
 import React from "react";
 import HomeImg from "../../assets/home-img/home-banner.png";
 import HomeImgSmartphone from "../../assets/home-img/home-banner-smartphone.png";
-import "./home-banner.css";
+import "./HomeBanner.css";
 
-function homeBanner() {
+function HomeBanner() {
   return (
     <section className="banner__home__section">
       <img
@@ -18,11 +18,11 @@ function homeBanner() {
         alt="Bannière pour la page d'accueil qui représente des falaises et des plages."
       />
 
-      <div className='banner__home__overlay'></div>
+      <div className="banner__home__overlay"></div>
 
       <h1 className="banner__home__title">Chez vous, partout et ailleurs</h1>
     </section>
   );
 }
 
-export default homeBanner;
+export default HomeBanner;

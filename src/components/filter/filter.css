@@ -1,36 +1,46 @@
-  /**** DESKTOP ****/
+/**** DESKTOP ****/
 .filter__container {
-    padding: 3px 41px 2px 40px;
-    background-color: var(--mainColor);
-    border-radius: 10px;
+  padding: 3px 41px 3px 40px;
+  background-color: var(--mainColor);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.filter__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  color: var(--secondaryColor);
+}
+
+@media (max-width: 1200px) {
+  .filter__container {
+    padding: 3px 20px 3px 20px;
+  }
+  .filter__text {
+    font-size: 12px;
+  }
+}
+
+/**** TABLET ****/
+@media (max-width: 768px) {
+  .filter__container {
+    padding: 3px 15px 3px 15px;
     margin-right: 10px;
   }
   .filter__text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 142.6%;
-    color: var(--secondaryColor);
+    font-size: 10px;
   }
-  
-  @media (max-width: 992px) {
-    .filter__text {
-      font-size: 12px;
-    }
+}
+
+/**** SMARTPHONE ****/
+@media (max-width: 576px) {
+  .filter__container {
+    padding: 3px 15px 3px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
   }
-  
-  /**** SMARTPHONE ****/
-  @media (max-width: 576px) {
-    .filter__container {
-      padding: 2px 31px 2px 30px;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
-    .filter__text {
-      font-size: 10px;
-    }
-  }
-  
-  @media (max-width: 376px) {
-   
-  }
+}
+
+@media (max-width: 376px) {
+}

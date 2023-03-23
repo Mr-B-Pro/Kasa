@@ -1,0 +1,166 @@
+/**** DESKTOP ****/
+.housing__data__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.housing__data__container__titles {
+  color: var(--mainColor);
+}
+.housing__data__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+}
+.housing__data__subTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+}
+
+.housing__data__container__filters {
+  display: flex;
+  margin-top: 23px;
+}
+
+.housing__data__container__profil__nameAndBadge {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.housing__data__profil__name {
+  text-align: end;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: var(--mainColor);
+}
+.housing__data__profil__badge {
+  margin-left: 10px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  overflow: hidden;
+}
+.housing__data__profil__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.housing__data__container__profil__stars {
+  display: flex;
+  margin-top: 10px;
+  color: #e3e3e3;
+}
+.star__container {
+  margin-left: 7px;
+  font-size: 36px;
+}
+.on {
+  color: var(--mainColor);
+}
+
+@media (max-width: 1350px) {
+  .housing__data__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .housing__data__title {
+    font-size: 23px;
+  }
+  .housing__data__subTitle {
+    font-size: 15px;
+  }
+  .housing__data__profil__name {
+    font-size: 15px;
+  }
+  .housing__data__profil__badge {
+    width: 55px;
+    height: 55px;
+  }
+  .star__container {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .housing__data__section {
+    display: initial;
+  }
+  .housing__data__container__titlesAndFilters {
+    margin-top: 20px;
+  }
+  .housing__data__title {
+    font-size: 21px;
+  }
+  .housing__data__container__profilAndStars {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  .housing__data__container__profil__stars {
+    margin-top: 0px;
+  }
+  .star__container {
+    font-size: 24px;
+  }
+}
+
+/**** TABLET ****/
+@media (max-width: 768px) {
+  .housing__data__title {
+    font-size: 16px;
+  }
+  .housing__data__subTitle {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .housing__data__profil__name {
+    font-size: 14px;
+  }
+  .housing__data__profil__badge {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/**** SMARTPHONE ****/
+@media (max-width: 576px) {
+  .housing__data__container__titlesAndFilters {
+    margin-top: 15px;
+  }
+  .housing__data__title {
+    font-size: 18px;
+  }
+  .housing__data__container__filters {
+    margin-top: 10px;
+  }
+  .housing__data__container__profilAndStars {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .housing__data__profil__name {
+    font-size: 12px;
+  }
+  .housing__data__profil__badge {
+    width: 32px;
+    height: 32px;
+  }
+  .housing__data__container__profil__stars {
+    margin-top: 0px;
+  }
+  .star__container {
+    margin-left: 5px;
+    font-size: 18px;
+  }
+}

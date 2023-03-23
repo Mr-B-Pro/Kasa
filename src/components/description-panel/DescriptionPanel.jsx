@@ -1,7 +1,7 @@
 import React from "react";
-import "./description-panel.css";
+import "./DescriptionPanel.css";
 
-function descriptionPanel() {
+function DescriptionPanel() {
   return (
     <div className="description__panel__container">
       <div className="description__panel__title__container">
@@ -23,4 +23,4 @@ function descriptionPanel() {
   );
 }
 
-export default descriptionPanel;
+export default DescriptionPanel;

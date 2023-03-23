@@ -1,12 +1,12 @@
-import React from 'react'
-import "./filter.css"
+import React from "react";
+import "./Filter.css";
 
-function filter() {
+function Filter(props) {
   return (
     <div className="filter__container">
-    <p className="filter__text">Cozy</p>
-  </div>
-  )
+      <p className="filter__text">{props.tags}</p>
+    </div>
+  );
 }
 
-export default filter
+export default Filter;
