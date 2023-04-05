@@ -7,8 +7,16 @@
   padding: 55px 50px 0px 0px;
   background-color: var(--BgColor);
   border-radius: 25px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+@media (min-width: 1600px) {
+  .home__grid__container {
+    max-width: 1400px;
+  }
+}
 @media (max-width: 1200px) {
   .home__grid__container {
     margin-top: 43px;

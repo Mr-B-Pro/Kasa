@@ -1,20 +1,19 @@
 /* variables */
 :root {
---mainColor: #FF6060;
---secondaryColor: #FFFFFF;
---BgColor: #F7F7F7;
---BgColor2: #000000;
+  --mainColor: #ff6060;
+  --secondaryColor: #ffffff;
+  --BgColor: #f7f7f7;
+  --BgColor2: #000000;
 }
 
 /* full pages */
 * {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
-
 
 /* Breakpoint	Class infix	Dimensions
 X-Small	None	<576px

@@ -3,7 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px 100px 0 100px;
+  margin: 40px 0px 0 0px;
+  padding: 0px 100px 0 100px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header__container a.active {
   text-decoration: underline;
@@ -13,7 +17,6 @@
   height: 68px;
   width: 210.32px;
 }
-
 .navbar__container {
   display: flex;
   font-size: 24px;
@@ -27,6 +30,9 @@
   width: 136px;
   color: var(--mainColor);
 }
+.navbar__accueil:hover {
+  color: #ff0000;
+}
 .navbar__a-propos {
   color: var(--mainColor);
   text-align: right;
@@ -34,11 +40,15 @@
   width: 116px;
   padding-left: 57px;
 }
+.navbar__a-propos:hover {
+  color: #fd3a3a;
+}
 
 /**** TABLET ****/
 @media (max-width: 768px) {
   .header__container {
-    margin: 30px 60px 0px 60px;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 60px 0px 60px;
   }
   .header__logo__kasa {
     height: 58px;
@@ -62,7 +72,8 @@
 /**** SMARTPHONE ****/
 @media (max-width: 576px) {
   .header__container {
-    margin: 20px 20px 0px 20px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
   }
   .header__logo__kasa {
     height: 47px;
@@ -90,4 +101,3 @@
     line-height: 17.11px;
   }
 }
-

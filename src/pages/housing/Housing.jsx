@@ -10,7 +10,7 @@ function Housing() {
   const location = useLocation();
   const [flat, setFlat] = useState(null);
 
-  useEffect(fetchApartmentsData, []);
+  useEffect(fetchApartmentsData);
 
   function fetchApartmentsData() {
     fetch("data-base.json")
@@ -27,10 +27,9 @@ function Housing() {
 
   return (
     <main className="main__housing">
-      selected flat : {JSON.stringify(flat)}
-      <HousingBanner imageUrl={flat.cover} />
+      <HousingBanner pictures={flat.pictures} />
       <HousingData flat={flat} />
-      <HousingPanel />
+      <HousingPanel flat={flat} />
     </main>
   );
 }
