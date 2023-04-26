@@ -13,9 +13,19 @@ function DescriptionPanel(props) {
           : "housing-accordion"
       }
     >
-      <div className="about-accordion-item housing-accordion-item">
+      <div
+        className={
+          window.location.pathname === "/about"
+            ? "about-accordion-item"
+            : "housing-accordion-item"
+        }
+      >
         <div
-          className="about-accordion-title housing-accordion-title"
+          className={
+            window.location.pathname === "/about"
+              ? "about-accordion-title"
+              : "housing-accordion-title"
+          }
           onClick={() => setIsActive(!isActive)}
         >
           <p>{props.title}</p>
@@ -25,7 +35,13 @@ function DescriptionPanel(props) {
           ></i>
         </div>
         {isActive && (
-          <div className="about-accordion-content housing-accordion-content">
+          <div
+            className={
+              window.location.pathname === "/about"
+                ? "about-accordion-content"
+                : "housing-accordion-content"
+            }
+          >
             {props.content}
           </div>
         )}
