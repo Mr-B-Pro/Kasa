@@ -3,38 +3,42 @@
 .about__panel__section {
   display: flex;
   flex-direction: column;
-  padding: 0 209px 80px 209px;
+  padding: 0 209px 459px 209px;
   max-width: 1231px;
   margin-left: auto;
   margin-right: auto;
 }
-
+@media (max-width: 1435px) {
+  .about__panel__section {
+    padding: 0 150px 504px 150px;
+  }
+}
 @media (max-width: 1200px) {
   .about__panel__section {
-    padding: 0 150px 80px 150px;
+    padding: 0 150px 565px 150px;
   }
 }
 @media (max-width: 992px) {
   .about__panel__section {
-    padding: 0 100px 80px 100px;
+    padding: 0 100px 554px 100px;
   }
 }
 
 /* TABLET */
 @media (max-width: 768px) {
   .about__panel__section {
-    padding: 0 70px 80px 70px;
+    padding: 0 70px 596px 70px;
   }
 }
 
 /**** SMARTPHONE ****/
 @media (max-width: 576px) {
   .about__panel__section {
-    padding: 0 0px 80px 0px;
+    padding: 0 0px 635px 0px;
   }
 }
 @media (max-width: 376px) {
   .about__panel__section {
-    padding: 0 0 296px 0px;
+    padding: 0 0 635px 0px;
   }
 }

@@ -4,15 +4,24 @@
   display: flex;
   justify-content: space-between;
   gap: 76px;
-  margin: 0px 0px 206px 0;
+  margin: 0px 0px 368px 0;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
-
+@media (max-width: 1352px) {
+  .housing__panel__section {
+    margin: 0px 0px 371px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .housing__panel__section {
+    margin: 0px 0px 392px 0;
+  }
+}
 @media (max-width: 992px) {
   .housing__panel__section {
-    margin: 0px 0px 138px 0;
+    margin: 0px 0px 345px 0;
   }
 }
 
@@ -20,7 +29,7 @@
 @media (max-width: 768px) {
   .housing__panel__section {
     flex-direction: column;
-    margin: 0px 0px 30px 0;
+    margin: 0px 0px 311px 0;
     gap: 0px;
   }
 }
@@ -28,12 +37,12 @@
 /**** SMARTPHONE ****/
 @media (max-width: 576px) {
   .housing__panel__section {
-    margin: 0px 0px 331px 0;
+    margin: 0px 0px 385px 0;
     gap: 0px;
   }
 }
 @media (max-width: 376px) {
   .housing__panel__section {
-    margin: 0px 0px 241px 0;
+    margin: 0px 0px 386px 0;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Panel from "../../components/description-panel/DescriptionPanel.jsx";
 import "./AboutPanel.css";
+import "./AboutAccordion.css";
 
 function AboutPanel() {
   return (
