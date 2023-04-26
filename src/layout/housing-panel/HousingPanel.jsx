@@ -1,7 +1,6 @@
 import React from "react";
 import Panel from "../../components/description-panel/DescriptionPanel.jsx";
 import "./HousingPanel.css";
-import "./HousingAccordion.css";
 
 // SECTION 3 CARDS CARROUSSEL MAIN HOUSING
 function HousingPanel(props) {

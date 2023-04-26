@@ -1,10 +1,18 @@
 import React, { useState } from "react";
+import "./AboutAccordion.css";
+import "./HousingAccordion.css";
 
 function DescriptionPanel(props) {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="about-accordion housing-accordion">
+    <div
+      className={
+        window.location.pathname === "/about"
+          ? "about-accordion"
+          : "housing-accordion"
+      }
+    >
       <div className="about-accordion-item housing-accordion-item">
         <div
           className="about-accordion-title housing-accordion-title"
