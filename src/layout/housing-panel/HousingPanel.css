@@ -37,12 +37,12 @@
 /**** SMARTPHONE ****/
 @media (max-width: 576px) {
   .housing__panel__section {
-    margin: 0px 0px 385px 0;
+    margin: 0px 0px 539px 0;
     gap: 0px;
   }
 }
 @media (max-width: 376px) {
   .housing__panel__section {
-    margin: 0px 0px 386px 0;
+    margin: 0px 0px 539px 0;
   }
 }

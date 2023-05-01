@@ -95,18 +95,25 @@ img.show {
   .banner__housing__section {
     border-radius: 10px;
     margin-top: 30px;
+    height: 260px;
+  }
+  .banner__housing__section img {
+    width: 100%;
+    height: 255px;
   }
   .banner__housing__arrowLeft {
     left: 5px;
     font-size: 40px;
+    top: 110px;
   }
   .banner__housing__arrowRight {
     right: 5px;
     font-size: 40px;
+    top: 110px;
   }
   .banner__housing__img {
     border-radius: 10px;
-    height: 255px;
+    height: 257px;
   }
 }
 
@@ -118,9 +125,11 @@ img.show {
   .banner__housing__arrowLeft {
     left: 5px;
     font-size: 20px;
+    top: 130px;
   }
   .banner__housing__arrowRight {
     right: 5px;
     font-size: 20px;
+    top: 130px;
   }
 }

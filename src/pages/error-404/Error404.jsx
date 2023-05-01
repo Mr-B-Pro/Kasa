@@ -1,8 +1,11 @@
+// PAGE ERROR 404
+
 import React from "react";
+// imporation de NavLink qui fournit un moyen déclaratif pour naviguer dans l'application. Il permet aussi d'appliquer le soulignement d'un lien quand il est actif.
 import { NavLink } from "react-router-dom";
+// imporation du css de la page Error404
 import "./Error404.css";
 
-// PAGE ERROR
 function Error404() {
   return (
     <main className="main__error404">
@@ -15,6 +18,7 @@ function Error404() {
           Oups! La page que <br /> vous demandez n'existe pas.
         </h2>
 
+        {/* Lien pour retourner vers la page principale */}
         <NavLink to="/">
           <div className="return__home__error404">
             Retourner sur la page d'accueil

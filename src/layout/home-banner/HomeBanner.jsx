@@ -1,6 +1,11 @@
+// LAYOUT HOME BANNER
+
 import React from "react";
+// importation de l'image du banner desktop de l'accueil
 import HomeImg from "../../assets/home-img/home-banner.png";
+// importation de l'image du banner smartphone de l'accueil
 import HomeImgSmartphone from "../../assets/home-img/home-banner-smartphone.png";
+// importation du css du layout HomeBanner
 import "./HomeBanner.css";
 
 function HomeBanner() {

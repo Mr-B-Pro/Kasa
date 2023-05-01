@@ -1,10 +1,15 @@
+// LAYOUT ABOUT PANEL
+
 import React from "react";
+// importation du composant DescriptionPanel
 import Panel from "../../components/description-panel/DescriptionPanel.jsx";
+// importation du css du layout AboutPanel
 import "./AboutPanel.css";
 
 function AboutPanel() {
   return (
     <section className="about__panel__section">
+      {/* composants des panels et descriptions de ce que propose le site Kasa */}
       <Panel
         title="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

@@ -1,5 +1,9 @@
+// COMPENENT FOOTER
+
 import React from "react";
+// importation du logo du footer
 import FooterLogo from "../../assets/footer-img/footer-logo.png";
+// importation du css du Footer
 import "./Footer.css";
 
 function Footer() {
