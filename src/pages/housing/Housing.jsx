@@ -13,6 +13,7 @@ import HousingPanel from "../../layout/housing-panel/HousingPanel.jsx";
 import "./Housing.css";
 
 function Housing() {
+  // useLocation est une fonction qui renvoie d'emplacement qui contient des informations sur l'URL. Chaque fois que l'URL change, un nouvel objet de localisation sera renvoyé
   const location = useLocation();
   // useState est un hook qui renvoi un tableau vide avec deux éléments (flat et setApartments), setFlat sert à modifier la valeur du tableau, il est de base sur null
   const [flat, setFlat] = useState(null);
@@ -28,15 +29,18 @@ function Housing() {
       .then((res) => res.json())
       // promesse qui renvoie la valeur du premier élément trouvé grâce à l'id de l'appartement
       .then((flats) => {
+        // la méthode find() renvoie la valeur du premier élément trouvé dans le tableau qui respecte la condition donnée,
         const flat = flats.find(
+          // ici l'id doit etre strictement égal pour retrouver les donnés du bon appartement
           (flat) => flat.id === location.state.apartmentId
         );
+        // setFlat sert à modifier la valeur du tableau
         setFlat(flat);
       })
       // console.error affiche un message d'erreur dans la console du navigateur en cas d'echec de la requete fetch
       .catch(console.error);
   }
-  // si les données de l'appartement ne s'affichent pas alors on renvoi un affichage qui indique Loading sur la page
+  // si les données de l'appartement ne s'affichent pas tout de suite alors on renvoi un affichage qui indique Loading sur la page
   if (flat == null) return <div>Loading...</div>;
 
   return (
