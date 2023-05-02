@@ -1,7 +1,9 @@
 // PAGE HOUSING
 
+// useState est un hook qui renvoi un tableau avec deux éléments
+// useEffect est un hook qui prend deux arguments et permet de déclencher une fonction de manière asynchrone lorsque le composant est chargé
 import React, { useEffect, useState } from "react";
-// importation de useLocation qui est une fonction qui renvoie d'emplacement qui contient des informations sur l'URL. Chaque fois que l'URL change, un nouvel objet de localisation sera renvoyé
+// importation de useLocation qui est une fonction qui renvoie l'emplacement qui contient des informations sur l'URL. Chaque fois que l'URL change, un nouvel objet de localisation sera renvoyé
 import { useLocation } from "react-router-dom";
 // importation de layout HousingBanner
 import HousingBanner from "../../layout/housing-banner/HousingBanner.jsx";
@@ -13,9 +15,9 @@ import HousingPanel from "../../layout/housing-panel/HousingPanel.jsx";
 import "./Housing.css";
 
 function Housing() {
-  // useLocation est une fonction qui renvoie d'emplacement qui contient des informations sur l'URL. Chaque fois que l'URL change, un nouvel objet de localisation sera renvoyé
+  // useLocation est une fonction qui renvoie l'emplacement qui contient des informations sur l'URL. Chaque fois que l'URL change, un nouvel objet de localisation sera renvoyé
   const location = useLocation();
-  // useState est un hook qui renvoi un tableau vide avec deux éléments (flat et setApartments), setFlat sert à modifier la valeur du tableau, il est de base sur null
+  // useState est un hook qui renvoi un tableau avec deux éléments (flat et setFlat), setFlat sert à modifier la valeur du tableau, il est de base sur null
   const [flat, setFlat] = useState(null);
 
   // useEffect est un hook qui prend deux arguments et permet de déclencher une fonction de manière asynchrone lorsque le composant est chargé
@@ -27,7 +29,7 @@ function Housing() {
     fetch("data-base.json")
       // promesse qui récupère les datas en string et renvoie la réponse au format json qui est un format que le navigateur comprend
       .then((res) => res.json())
-      // promesse qui renvoie la valeur du premier élément trouvé grâce à l'id de l'appartement
+      // promesse qui renvoie les valeurs des élément trouvés grâce aux id des appartements
       .then((flats) => {
         // la méthode find() renvoie la valeur du premier élément trouvé dans le tableau qui respecte la condition donnée,
         const flat = flats.find(

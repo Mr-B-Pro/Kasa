@@ -9,16 +9,16 @@ import "./HousingBanner.css";
 function HousingBanner(props) {
   // la variable pictures vaut props.pictures et sert à afficher les différentes images des appartements de façon dynamique
   const pictures = props.pictures;
-  //  useState est un hook qui renvoi un tableau vide avec deux éléments (currentPicture et setCurrentPicture), setCurrentPicture sert à modifier la valeur du tableau
+  //  useState est un hook qui renvoi un tableau avec deux éléments (currentPicture et setCurrentPicture), setCurrentPicture sert à modifier la valeur du tableau
   const [currentPicture, setCurrentPicture] = useState(0);
 
-  // la fonction getClassName est une fonction qui sert à si l'index est strictement égal à currentPicture alors on renvoi la classe show (on montre) sinon on retourne une string vide. Si i est égal a la premiere image du tableau alors on la montre sinon on la montre pas
+  // la fonction getClassName est une fonction qui sert à si l'index est strictement égal à currentPicture alors on renvoi la classe show (on montre) sinon on retourne une string vide. Si i (index) est égal a la premiere image du tableau alors on la montre sinon on la montre pas
   const getClassName = (i) => {
     if (i === currentPicture) return "show";
     return "";
   };
 
-  // la fonction moveToRight sert sert à déplacer la photo vers la droite dans le carrousel avec le + 1 de currentPicture, ça veut dire qu'on se déplace dans le tableau d'un élément
+  // la fonction moveToRight sert à déplacer la photo vers la droite dans le carrousel avec le + 1 de currentPicture, ça veut dire qu'on se déplace dans le tableau d'un élément
   const moveToRight = () => {
     // le modulot % sert à ne jamais dépasser le reste d'une division, la propriété length définit ou renvoie le nombre d'éléments dans le tableau
     setCurrentPicture((currentPicture + 1) % pictures.length);
@@ -26,9 +26,9 @@ function HousingBanner(props) {
 
   // la fonction moveToLeft sert sert à déplacer la photo vers la gauche dans le carrousel avec le - 1 de currentPicture, ça veut dire qu'on se déplace dans le tableau d'un élément
   const moveToLeft = () => {
-    // au début newCurrentPicture sera à zero et le nouvel sera - 1
+    // au début currentPicture sera à zero et on le passe à - 1
     const newCurrentPicture = currentPicture - 1;
-    // si newCurrentPicture est inferieur à 0 alors on invoque setCurrentPicture qui va faire -1 dans les images
+    // si newCurrentPicture est inferieur à 0 alors on invoque setCurrentPicture qui va faire -1 dans le tableau des images
     if (newCurrentPicture < 0) {
       setCurrentPicture(pictures.length - 1);
       return;
@@ -57,7 +57,7 @@ function HousingBanner(props) {
       {/* la méthode map permet d'itérer sur les données et de retourner un tableau avec tous les éléments */}
       {pictures.map((pic, i) => (
         <img
-          // invocatio de la fonction getClassName
+          // invocatio de la fonction getClassName qui sert à montrer l'image qui est séléctionné avec la class show
           className={getClassName(i)}
           key={pic}
           // // pic sert à afficher les différents photos des appartements de façon dynamique

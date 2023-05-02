@@ -1,6 +1,6 @@
 /**** DESKTOP ****/
 .filter__container {
-  padding: 3px 41px 3px 40px;
+  padding: 3px 40px 3px 40px;
   background-color: var(--mainColor);
   border-radius: 10px;
   margin-right: 10px;
@@ -33,7 +33,7 @@
 @media (max-width: 768px) {
   .filter__container {
     padding: 3px 15px 3px 15px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
   .filter__text {
     font-size: 10px;
@@ -43,9 +43,9 @@
 /**** SMARTPHONE ****/
 @media (max-width: 576px) {
   .filter__container {
-    padding: 3px 15px 3px 15px;
+    padding: 3px 12px 3px 12px;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
 }
 

@@ -27,6 +27,8 @@
 
 .housing__data__container__filters {
   display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
   margin-top: 23px;
 }
 

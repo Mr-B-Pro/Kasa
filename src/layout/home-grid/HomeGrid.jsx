@@ -9,7 +9,7 @@ import ApartmentCard from "../../components/apartment-card/ApartmentCard.jsx";
 import "./HomeGrid.css";
 
 function HomeGrid() {
-  // useState est un hook qui renvoi un tableau vide avec deux éléments (apartments et setApartments), setApartments sert à modifier la valeur du tableau
+  // useState est un hook qui renvoi un tableau avec deux éléments (apartments et setApartments), setApartments sert à modifier la valeur du tableau
   const [apartments, setApartments] = useState([]);
 
   // useEffect est un hook qui prend deux arguments et permet de déclencher une fonction de manière asynchrone lorsque le composant est chargé

@@ -16,7 +16,7 @@ function ApartmentCard(props) {
   return (
     // Lien vers l'appartement qu'on aura séléctionné et ses données
     // NavLink sert à naviguer sans refaire de requete au server
-    // state sert à trouver l'id qui correspond à l'appartement séléctionné
+    // state sert à trouver la props qui correspond à l'id de l'appartement séléctionné
     <NavLink to="/housing" state={state}>
       <div className="apartment__container">
         <img
